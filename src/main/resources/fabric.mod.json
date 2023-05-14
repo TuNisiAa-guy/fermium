@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "fermium",
+  "version": "${version}",
+  "name": "fermium",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/toluz/fermium"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/fermium/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.tunisiaa.fermium.client.FermiumClient"
+    ],
+    "main": [
+      "me.tunisiaa.fermium.Fermium"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric": "*",
+    "minecraft": "1.19.4"
+  }
+}
