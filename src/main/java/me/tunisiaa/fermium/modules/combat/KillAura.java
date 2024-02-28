@@ -3,6 +3,7 @@ package me.tunisiaa.fermium.modules.combat;
 import me.tunisiaa.fermium.modules.Module;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.command.argument.EntityAnchorArgumentType;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.passive.BeeEntity;
@@ -31,7 +32,8 @@ public class KillAura extends Module {
                         closest = (Entity) entity;
                     }
                 }
-                client.player.lookAt(closest.getPos());
+                client.player.lookAt(EntityAnchorArgumentType.EntityAnchor.EYES, closest.getPos());
+                client.player.swingHand(client.player.getActiveHand());
             }
         });
     }
