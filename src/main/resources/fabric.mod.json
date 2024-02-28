@@ -3,8 +3,8 @@
   "id": "fermium",
   "version": "${version}",
   "name": "fermium",
-  "description": "",
-  "authors": [],
+  "description": "Yet another utility mod",
+  "authors": ["TuNisiAa"],
   "contact": {
     "repo": "https://github.com/toluz/fermium"
   },

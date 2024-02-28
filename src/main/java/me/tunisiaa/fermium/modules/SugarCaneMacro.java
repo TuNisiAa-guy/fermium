@@ -9,7 +9,7 @@ import me.tunisiaa.fermium.client.FermiumClient;
 import net.minecraft.client.option.KeyBinding;
 
 
-public class SugarCaneMacro {
+public class SugarCaneMacro extends Module{
     static boolean orientation = false; //false = backward, true = sideways (forward)
     static InputUtil.Key backward = MinecraftClient.getInstance().options.backKey.getDefaultKey();
     static InputUtil.Key left = MinecraftClient.getInstance().options.leftKey.getDefaultKey();

@@ -1,14 +1,13 @@
 package me.tunisiaa.fermium.client;
 
 import me.tunisiaa.fermium.modules.SugarCaneMacro;
+import me.tunisiaa.fermium.modules.combat.KillAura;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.text.Text;
 import net.minecraft.util.math.Vec3d;
 import org.lwjgl.glfw.GLFW;
 
@@ -44,6 +43,8 @@ public class FermiumClient implements ClientModInitializer {
             }
 
         });
+        KillAura ka = new KillAura();
+        ka.start();
     }
 
 }
